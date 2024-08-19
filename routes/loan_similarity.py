@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Elasticsearch 클라이언트 설정
-es = Elasticsearch(['http://localhost:9200'])
+es = Elasticsearch(['http://192.168.10.6:9200'])
 
 # 데이터 로드 함수
 def load_data_from_es(index_name):

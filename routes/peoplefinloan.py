@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Elasticsearch 설정
-es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+es = Elasticsearch([{'scheme': 'http', 'host': '192.168.10.6', 'port': 9200}])
 
 # 인덱스명
 index_name = 'peoplefinloan'

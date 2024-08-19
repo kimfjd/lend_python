@@ -3,7 +3,7 @@ import numpy as np
 from elasticsearch import Elasticsearch
 from flask import request, jsonify
 
-es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+es = Elasticsearch([{'scheme': 'http', 'host': '192.168.10.6', 'port': 9200}])
 
 
 def get_data_from_elasticsearch(index_name):

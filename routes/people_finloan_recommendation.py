@@ -3,7 +3,7 @@ from flask import request, jsonify
 from elasticsearch import Elasticsearch
 
 # Elasticsearch 설정
-es = Elasticsearch("http://localhost:9200")
+es = Elasticsearch("http://192.168.10.6:9200")
 
 def 추천_대출_상품(data, 사용자_대상, 사용자_지역, 사용자_연령, 사용자_소득, 사용자_신용점수):
     # 1. 대상 필터링

@@ -4,7 +4,7 @@ from flask import request, jsonify
 from elasticsearch import Elasticsearch
 
 # Elasticsearch 설정
-es = Elasticsearch("http://localhost:9200")
+es = Elasticsearch("http://192.168.10.6:9200")
 
 # 담보 종류 맵핑 (0: 아파트, 1: 아파트 이외)
 collateral_type_mapping = {

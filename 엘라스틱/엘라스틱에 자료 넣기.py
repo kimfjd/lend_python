@@ -16,7 +16,7 @@ def get_loan_data():
 
 def send_to_elasticsearch():
     # Elasticsearch 클라이언트 생성
-    es = Elasticsearch("http://localhost:9200")
+    es = Elasticsearch("http://192.168.10.6:9200")
 
     # 인덱스 이름
     index_name = "credit_loan"

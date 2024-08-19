@@ -10,7 +10,7 @@ from routes.mortgage import mortgage_loan
 from routes.people_finloan_recommendation import people_finloan_recommendation
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000'])
+CORS(app, origins=['http://192.168.10.6:3000'])
 
 # API 엔드포인트 등록
 app.add_url_rule('/api/loan_recommendations', 'get_recommendations', get_recommendations, methods=['POST'])
@@ -24,4 +24,4 @@ app.add_url_rule('/api/people_finloan_recommendation', 'people_finloan_recommend
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
