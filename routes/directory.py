@@ -69,7 +69,7 @@ def recommend_loan_products():
     recommended_loans = recommend_loans_based_on_credit_score(user_credit_score)
 
     if not recommended_loans.empty:
-        result = recommended_loans[['순번', '금융회사 명', '금융 상품명', '적용 금리']].to_dict(orient='records')
+        result = recommended_loans[['순번', '금융회사 명', '금융 상품명', '적용 금리', '대출종류명']].to_dict(orient='records')
         return jsonify(result)
     else:
         return jsonify({"message": "조건에 맞는 대출 상품이 없습니다."})
