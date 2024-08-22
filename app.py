@@ -8,6 +8,7 @@ from routes.directory import recommend_loan_products
 from routes.jeonse import jeonse_loan
 from routes.mortgage import mortgage_loan
 from routes.people_finloan_recommendation import people_finloan_recommendation
+from routes.rate_forecast import rate_forecast_endpoint
 
 app = Flask(__name__)
 CORS(app, origins=['http://192.168.10.6:3000'])
@@ -21,6 +22,7 @@ app.add_url_rule('/api/recommend_loan_products', 'recommend_loan_products', reco
 app.add_url_rule('/api/jeonse_loan', 'jeonse_loan', jeonse_loan, methods=['POST'])
 app.add_url_rule('/api/mortgage_loan', 'mortgage_loan', mortgage_loan, methods=['POST'])
 app.add_url_rule('/api/people_finloan_recommendation', 'people_finloan_recommendation', people_finloan_recommendation, methods=['POST'])
+app.add_url_rule('/api/rate_forecast_endpoint', 'rate_forecast_endpoint', rate_forecast_endpoint, methods=['POST'])
 
 
 if __name__ == '__main__':
