@@ -7,7 +7,7 @@ import numpy as np
 import traceback
 
 # Elasticsearch 설정
-es = Elasticsearch("http:/192.168.10.6:9200")
+es = Elasticsearch("http://localhost:9200")
 
 def rate_forecast_endpoint():
     try:

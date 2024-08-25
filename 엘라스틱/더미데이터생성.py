@@ -4,7 +4,7 @@ import requests
 import json
 
 # CSV 파일 경로
-csv_file_path = 'credit_loan.csv'
+csv_file_path = 'mortgage_loan.csv'
 
 # CSV 파일 읽기
 df = pd.read_csv(csv_file_path)
@@ -46,7 +46,7 @@ def generate_dummy_data(df):
 url = "http://localhost:8118/loanhistory/save"
 
 # 예시: 10개의 더미 데이터 생성 및 전송
-for _ in range(10):
+for _ in range(300):
     dummy_data = generate_dummy_data(df)
 
     # JSON으로 변환

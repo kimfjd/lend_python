@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Elasticsearch 클라이언트 설정
-es = Elasticsearch([{'scheme': 'http', 'host': '192.168.10.6', 'port': 9200}])
+es = Elasticsearch([{'scheme': 'http', 'host': 'localhost', 'port': 9200}])
 
 def get_applicable_rate(row, credit_score):
     if credit_score > 900:
