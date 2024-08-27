@@ -12,7 +12,7 @@ from routes.rate_forecast import rate_forecast_endpoint
 from routes.agesuggestion import agesuggestion_endpoint
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000'])
+CORS(app, origins=['http://192.168.10.6:3000'])
 
 # API 엔드포인트 등록
 app.add_url_rule('/api/loan_recommendations', 'get_recommendations', get_recommendations, methods=['POST'])

@@ -43,7 +43,7 @@ def generate_dummy_data(df):
 
 
 # 자바 백엔드 서버 URL 설정
-url = "http://localhost:8118/loanhistory/save"
+url = "http://192.168.10.6:8118/loanhistory/save"
 
 # 예시: 10개의 더미 데이터 생성 및 전송
 for _ in range(300):

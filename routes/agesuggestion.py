@@ -5,7 +5,7 @@ from flask import request, jsonify
 # MySQL 데이터베이스 연결 설정
 db_user = 'root'
 db_password = '5648'
-db_host = 'localhost'
+db_host = '192.168.10.6'
 db_port = 3306  # MySQL의 기본 포트 번호는 3306
 db_name = 'lend'
 
